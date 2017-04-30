@@ -12,4 +12,6 @@ public @interface GenerateBuilderInterface {
   
   String withName() default DEFAULT_NAME;
 
+  Class<?>[] extending() default Void.class;
+
 }
