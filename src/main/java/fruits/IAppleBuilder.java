@@ -6,6 +6,14 @@ import javax.annotation.Generated;
 public interface IAppleBuilder<P extends Apple> extends IFruitBuilder<P> {
   
   /**
+   * Sets the default value for the {@link Fruit#colour} property.
+   *
+   * @param value the default value
+   * @return this builder
+   */
+  public IAppleBuilder<P> withColour(String value);
+  
+  /**
    * Sets the default value for the {@link Apple#variety} property.
    *
    * @param value the default value
